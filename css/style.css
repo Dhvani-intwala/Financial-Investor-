@@ -15,6 +15,7 @@ body{
 
 .logo{
     font-size: 2rem;
+    color: chocolate;
   
 }
 .logo p{
@@ -23,7 +24,8 @@ body{
 }
 
 header{
-   
+   position: absolute;
+   top: 0;
     width: 100%;
     display: flex;
     justify-content: space-between;
@@ -43,7 +45,7 @@ header{
 }
 
 .menu-bar li a{
-    color: white;
+    color: chocolate;
     text-decoration: none;
     font-weight: 500;
     letter-spacing: 1px;
@@ -51,31 +53,52 @@ header{
 }
 
 .menu-bar li:hover a{
-    color: #de0611;
+    color: rgb(128, 61, 13);
 }
 
 .meetting a{
     color: black;
-    font-weight: 400;
-    background-color: white;
+    font-weight: 600;
+    background-color: chocolate;
     text-decoration: none;
-    border: white 3px solid;
+    border: black 1px solid;
     padding: 5px;
     border-radius: 2rem;
 }
 
 .img img{
-    height: 500px;
+    height: 700px;
     width: 100%;
 }
 .text{
     position: absolute;
-    top:25%;
+    top:30%;
     left: 5%;
 }
 .text h2{
     font-size: 4rem;
     text-transform: uppercase;
+    color: #d2691e;
+}
+.text p{
+    color: chocolate;
+}
+.text h1{
+    color: chocolate;
+}
+
+/* *********** About Us ************* */
+
+#about p{
+    text-align: center;
+    margin-top: 50px;
+    color: chocolate;
+}
+#about h1{
+    text-align: center;
+    margin-top: 15px;
+    text-transform: uppercase;
+    font-size: 2.5rem;
 }
 
 
