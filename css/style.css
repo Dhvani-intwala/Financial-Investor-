@@ -6,20 +6,24 @@
     margin: 0;
     box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif;
+
 }
 
 body{
     background-color: black;
     color: white;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
 }
 
 .logo{
     font-size: 2rem;
-    color: chocolate;
+    color:  #d05803;
   
 }
 .logo p{
-    font-family: 'Yellowtail', cursive
+    font-family: 'Yellowtail', cursive;
 
 }
 
@@ -45,7 +49,7 @@ header{
 }
 
 .menu-bar li a{
-    color: chocolate;
+    color: #d05803;
     text-decoration: none;
     font-weight: 500;
     letter-spacing: 1px;
@@ -57,61 +61,106 @@ header{
 }
 
 .meetting a{
-    color: black;
+    color: rgb(15, 14, 14);
     font-weight: 600;
-    background-color: chocolate;
+    background-color:#d05803;
     text-decoration: none;
-    border: black 1px solid;
+    border:#d05803 1px solid;
     padding: 5px;
     border-radius: 2rem;
 }
 
-.img img{
-    height: 700px;
+.Main-image img{
+    height: 100vh;
     width: 100%;
 }
 .text{
     position: absolute;
-    top:30%;
-    left: 5%;
+    top:35%;
+    left: 6%;
 }
 .text h2{
-    font-size: 4rem;
+    font-size: 5rem;
     text-transform: uppercase;
-    color: #d2691e;
+    color: #d05803;
 }
 .text p{
-    color: chocolate;
+    color: #d05803;
+    font-weight: 600;
+    font-size: 1.2rem;
 }
 .text h1{
-    color: chocolate;
+    color: #d05803;
+    font-size: 3rem;
 }
 
 /* *********** About Us ************* */
 
-#about p{
+.heading {
     text-align: center;
     margin-top: 50px;
-    color: chocolate;
+    color:#d05803; 
     font-size: 1rem;
+    text-transform: uppercase;
 }
-#about h1{
+.heading-text {
     text-align: center;
     margin-top: 15px;
     text-transform: uppercase;
     font-size: 2.5rem;
 }
 hr{
-    background-color: chocolate;
+    background-color:  #d05803;
     justify-content: center;
     border: none;
     width: 100px;
     height: 2px;
     margin:  10px auto;
-    
 }
 
+.container{
+    overflow: hidden; 
+    height: 380px;
+    width: 700px;
+    margin-top: 50px;
+    margin-left: 50px;
+    position: relative;
+    
+}
+.slides-img{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    object-fit: cover;  
+}
+.overview{
+    float: right;
+    width: 45%;
+    position: relative;
+    bottom: 370px;
+    margin-right: 50px;
+}
 
+.overview h2{
+    color: #d05803; 
+    font-size: 1.5rem;
+    text-align: justify;
+    margin-bottom: 15px;
+}
 
+.overview  span{
+    color: white;
+    font-size: 2rem;
+}
+.overview p{
+    color: white;
+    text-align: justify;
+    margin-top: 20px;
+    line-height: 25px;
 
+}
+.overview strong{
+    color: #d05803;
+    font-size: 1.5rem;
+}
 
