@@ -45,33 +45,32 @@
               <h1>  DI SECURE PRODUCT - CALCULATION </h1>
               <p class="heading-1">Here's an estimated projection to show the impact of lower fees and compound interest.</p>
             </div>
-            <form class="container-2">
-                <div class="slidecontainer">
-                    <label for="invesment">How many would you like to Invest?</label>
-                    <div id="slider-value">100</div><br>
-                    <input type="range" min="100" max="1,00,000" value="" id="p">
-                   
+            <div class="container-2">
+                <div class="input-wrapper">
+                    <div class="wrapper">
+                        <label for="principle">Principle($): </label>
+                        <input type=" number" id="principle" value="1000"></input>
+                    </div>
+                    <div class="wrapper">
+                        <label for="rate">Rate: </label>
+                        <input type=" number" id="rate" value="5"></input>
+                    </div>
                 </div>
-
-                <div class="slidecontainer">
-                    <label for="year">Numbers of years</label>
-                    <div id="slider-value">1</div><br>
-                    <input type="range" min="1" max="40" value="" id="t">
-                   
-                </div>
+                    <label for="time">Time: </label>
+                    <div class ="time-weapper">
+                        <input type=" number" id="time" value="1"></input>
+                        <select name="duration" id="duration">
+                            <option value="year">Year</option>
+                            <option value="month">Month</option>
+                        </select>
+                    </div>
+                    
+                    <button id="calculate-btn"> calculate</button>
+                    <div id="result"></div>
 
                 
-                <div class="slidecontainer">
-                    <label for="rate">Expected Rate of Return</label>
-                    <div id="slider-value">1%</div><br>
-                    <input type="range" min="0" max="15" value="" id="r">
-                    
-                </div>
-                <div id="res">
-                    <p>Invested Amount :</p>
-                    <p>profit Amount :</p>
-                </div>
-            </form>
+
+            </div>
 
         </div>
     </section>

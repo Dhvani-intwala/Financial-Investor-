@@ -10,28 +10,32 @@ function automaticSlide(){
     if(firstIndex > img.length){
         firstIndex =1;
     }
-    img[firstIndex -1].style.display="block";
+   img[firstIndex -1].style.display='block';
+  
 }
 automaticSlide();
 
 
 /* *********** SIP Calculator ************* */
-function ci(){
-    var p = document.getElementById("p").value;
-    var t = document.getElementById("t").value;
-    var r = document.getElementById("r").value;
-    var amount = p*(Math.pow(1+r/100,t));
-    var ci=amount-p;
-    document.getElementById("res").innerHTML="Amount :  " +amount.toFixed(2) +"</br>Compund Interest : "+ci.toFixed(2);
-    console.log(amount);
-}
+
+let result = document.getElementById("result");
+
+ let calculate = () => {
+    let p = Number(document.getElementById("principal").value);
+    let r = Number(document.getElementById("rate").value);
+    let t = Number(document.getElementById("time").value);
+    let duration = Number(document.getElementById("duration").value);
+    
+    console.log(p,r,t,duration);
+   
+ };
+
+ let CalculateBtn = document.getElementById("calculate-btn");
+ CalculateBtn.addEventListener(calculate)
+ window.addEventListener(calculate);
 
 /* *********** form validation ************* */
 
-
-var emailError =document.getElementById('email-error');
-
-var submitError =document.getElementById('submit-error');
 
 function validateName(){
     let nameError =document.getElementById('name-error');
@@ -45,27 +49,11 @@ function validateName(){
         nameError.innerHTML = 'Write full name';
         return false;
     }
-    nameError.innerHTML ='vaild';
+    nameError.innerHTML ='<i class="fas fa-check-circle"></i>';
     return true;
    
 }
 
-function validatePhone(){
-    var phoneError =document.getElementById('phone-error');
-    var phone = document.getElementById('phone');
 
-    if(phone.length == 0){
-        phoneError.innerHTML = 'phone number is required';
-        return false;
-    }
-    if( phone.length !== 10){
-        phoneError.innerHTML = 'phonenumber should be 10 digits';
-        return false;
-    }
-    if(!phone.match(/^[0-9]{10}$/)){
-        phoneError.innerHTML = 'phone number is required';
-        return true;
-    }
-    phoneError.innerHTML ='vaild';
-    return true;
-}
+
+

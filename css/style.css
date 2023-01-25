@@ -190,52 +190,66 @@ small{
 }
 
 .container-2{
-    background-color: darkslategray;
-    width: 40%;
-    height: 60%;
+    background-color: white;
+    width: 60%;
+    height: 70%;
     margin: auto;
     margin-top: 30px;
+    border-radius: 10px;
+    padding: 60px 30px;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.2);
 }
-#slider-value{
-    display: flex;
-    float: right;
-    margin-right: 40px;
-    background-color: rgb(15, 16, 16);
-    width: 40px;
-    text-align: center;
-    justify-content: center;
-    padding: 2px;
-
+label{
+    display: block;
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 10px;
+    color: black;
 }
-input[type=range]{
-    height: 10px;
-    margin: 10px 0;
-    width: 95%;
-    border-radius: 5px;
-    margin: 10px;
-    cursor: pointer;
-   
+input{
+    margin-bottom: 20px;
+    border: none;
+    font-size: 20px;
+    border-bottom:  2px solid #585858;
+    color:#585858;
+    padding: 2px 15px;
 }
-input[type=range]:focus {
+input:focus{
     outline: none;
+    border-bottom: 2.5px solid black;
 }
-.slidecontainer{
-    margin-top: 10px;
+.input-wrapper{
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
 }
-#res{
+.input-wrapper input{
+    width:100%;
+}
+.time-weapper input{
+    width:50%;
+    
+}
+#duration{
+    width:35%;
+    border: 1px solid #585858;
+    font-size: 20px;
+    margin-left:3%;
+    padding: 8px 0;
+    border-radius: 5px;
+}
+#calculate-btn{
+    display: block;
     background-color: #1f1e20;
-    justify-content: center;
-    font-size: 1.5rem;
-    width: 80%;
-    margin: 20px;
-    line-height: 50px;
-
+    color: white;
+    border: none;
+    margin:  30px auto 0;
+    padding: 15px 40px;
+    border-radius: 5px;
+    font-size: 20px;
+    width:40%;
+    
 }
-.slidecontainer label{
-    margin-left: 15px;
-}
-
-
 
 /* *********** contact Us ************* */
 
@@ -285,6 +299,7 @@ input[type=range]:focus {
     margin-top: 50px;
 }
 .contact-form{
+    position: fixed;
     position: absolute;
     bottom: 20%;
     right:5%;
@@ -300,7 +315,7 @@ input[type=text] {
   border-radius: 4px;
   box-sizing: border-box;
 }
-input[type=email],input[type=tel] ,select {
+input[type=email],input[type=tel] , #list {
     width: 100%;
     padding: 12px 20px;
     margin: 8px 0;
@@ -309,7 +324,16 @@ input[type=email],input[type=tel] ,select {
     border-radius: 4px;
     box-sizing: border-box;
   }
-  input[type=submit] {
+  #list2{
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  button {
     width: 100%;
     background-color: #d05803;
     color: white;
@@ -320,7 +344,7 @@ input[type=email],input[type=tel] ,select {
     cursor: pointer;
   }
   
-  input[type=submit]:hover {
+  button:hover {
     background-color: #ce5c0b;
   }
   .contact-form h1{
@@ -340,6 +364,12 @@ input[type=email],input[type=tel] ,select {
     color: red;
     
   }
+.input-box span i{
+    color: seagreen;
+    position: relative;
+    left:35%;
+}
+
   #submit-error{
     color:red;
   }
