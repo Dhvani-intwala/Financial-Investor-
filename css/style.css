@@ -251,6 +251,17 @@ input:focus{
     
 }
 
+#result{
+    color:white;
+    background-color: black;
+    font-size: 20px;
+    border: 1px solid black;
+    border-radius: 5px;
+    margin:  20px auto;
+    padding: 10px;
+    text-align: center;
+}
+
 /* *********** contact Us ************* */
 
 .contact-header {

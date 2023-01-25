@@ -10,7 +10,7 @@ function automaticSlide(){
     if(firstIndex > img.length){
         firstIndex =1;
     }
-   img[firstIndex -1].style.display='block';
+   img[firstIndex -1].style.display="block";
   
 }
 automaticSlide();
@@ -18,21 +18,20 @@ automaticSlide();
 
 /* *********** SIP Calculator ************* */
 
-let result = document.getElementById("result");
+ function calculateCi(){
+   var p = document.getElementById('principle').value;
+    var t = document.getElementById('time').value;
+    var r = document.getElementById('rate').value;
+   var amount = p*(Math.pow(1+(r/100),t));
+   var ci= amount-p;
+  // document.getElementById("result").innerHTML="Amount : "+amount.toFixed(2)+"</br>Compound Interest : "+ci.toFixed(2);
 
- let calculate = () => {
-    let p = Number(document.getElementById("principal").value);
-    let r = Number(document.getElementById("rate").value);
-    let t = Number(document.getElementById("time").value);
-    let duration = Number(document.getElementById("duration").value);
-    
-    console.log(p,r,t,duration);
-   
- };
+  document.getElementById("amount").innerHTML=amount.toFixed(2);
+  document.getElementById("compound").innerHTML=ci.toFixed(2);
+  
+ }
 
- let CalculateBtn = document.getElementById("calculate-btn");
- CalculateBtn.addEventListener(calculate)
- window.addEventListener(calculate);
+ 
 
 /* *********** form validation ************* */
 
