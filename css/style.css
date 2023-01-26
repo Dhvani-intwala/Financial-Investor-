@@ -436,4 +436,11 @@ input[type=email],input[type=tel] , #list {
   .media h2{
     margin-bottom: 10px;
   }
+
+    /* *********** faq page ************* */
   
+    .faq-img img{
+        width: 100%;
+        height: 500px;
+        
+    }
